@@ -1,0 +1,74 @@
+body{
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 1cm;
+
+    /*
+    
+    Outra forma de centralizar :
+    margin-inline: max(1em, (100% - 100ch)/2);
+
+    */
+}
+
+nav{
+    display:flex;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+}
+
+nav a {
+    flex:1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+}
+
+:root{
+    --grey:oklch(80% 3% 200);
+    --white: #ffffff;
+    --color--accent: 
+    --color--accent-bg:
+}
+
+nav.current{
+    border-bottom-width: 0.4em;
+    border-bottom-style:solid;
+    border-bottom-color: var(--grey);
+    padding: 0.1em;
+    font-weight: bold;
+}
+
+nav a:hover{
+    border-bottom-width: 0.4em;
+    border-bottom-style:solid;
+    border-bottom-color: var(--color--accent);
+    padding-bottom: -0.1em;
+    background-color: var(--color--accent-bg);
+}
+
+
+
+input, textarea,button{
+    font: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label, input, textarea, button{
+    display: block;
+}
+
+input, textarea, button{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label{
+    margin-block: 1rem;
+}
+
+
